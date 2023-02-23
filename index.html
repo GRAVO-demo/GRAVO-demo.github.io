@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.88.1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href=""https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/normalize.css">
+
+	<title>GRAVO</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1091.0" data-gr-ext-installed="">
+
+<div class="container" >
+<header role="banner">
+</header>
+<main role="main">
+<article itemscope itemtype="https://schema.org/BlogPosting">
+
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+	<div class="text-center">
+	<h1>GRAVO</h1>
+        <h3>Learning to Generate Relevant Audio from Visual Features with Noisy Online Videos</h3>
+        <p class="fst-italic mb-0">
+          <br>
+            Anonymous
+			<br>
+			<p></p>
+        </p>
+	</div>
+	<p>
+        <b>Abstract.</b> 
+		We introduce GRAVO.
+		<br><br>
+		This page is for <b>research demonstration purposes</b> only.
+      </p>
+</div>
+		
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">		
+	<h2 id="model-overview" style="text-align: center;">Model Overview</h2>
+	<body>
+	<p style="text-align: center;">
+		<img src="figures/tmp_fig1.png" height="400" width="800">
+	</p>
+	</body>
+		<p>
+		The overview of GRAVO.  
+		</p>
+</div>
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+	<h2 id="makeavideo-samples" style="text-align: center;">Make-A-Video Samples</h2>
+		<div class="table-responsive pt-3">
+			<table class="table table-hover pt-2">
+			<thead>
+			<tr>
+			<th style="text-align: center">Video name</th>
+			<th style="text-align: center">Video</th>
+			<th style="text-align: center">Baseline</th>
+			<th style="text-align: center">GRAVO</th>
+			</tr>
+			</thead>
+            <tbody>
+                <tr>
+                    <td style="text-align: left;vertical-align:middle;width: 400px">A teddy bear painting a portrait.</td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"> <source src="samples/webm_no_audio/A_teddy_bear_painting_a_portrait.webm" type="video/webm"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_im2wav/A_teddy_bear_painting_a_portrait.mp4" type="video/mp4"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_GRAVO/A_teddy_bear_painting_a_portrait.mp4" type="video/mp4"></video></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: left;vertical-align:middle;width: 400px">Hyper-realistic spaceship landing on mars.</td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"> <source src="samples/webm_no_audio/style1.webm" type="video/webm"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_im2wav/style1.mp4" type="video/mp4"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_GRAVO/style1.mp4" type="video/mp4"></video></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: left;vertical-align:middle;width: 400px">A confused grizzly bear in calculus class.</td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"> <source src="samples/webm_no_audio/A_confused_grizzly_bear_in_calculus_class.webm" type="video/webm"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_im2wav/A_confused_grizzly_bear_in_calculus_class.mp4" type="video/mp4"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_GRAVO/A_confused_grizzly_bear_in_calculus_class.mp4" type="video/mp4"></video></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: left;vertical-align:middle;width: 400px">A golden retriever eating ice cream on a beautiful tropical beach at sunset, high resolution.</td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"> <source src="samples/webm_no_audio/a_golden_retriever_eating_ice_cream_on_a_beautiful_tropical_beach_at_sunset,_high_resolution__22.webm" type="video/webm"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_im2wav/a_golden_retriever_eating_ice_cream_on_a_beautiful_tropical_beach_at_sunset,_high_resolution__22.mp4" type="video/mp4"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_GRAVO/a_golden_retriever_eating_ice_cream_on_a_beautiful_tropical_beach_at_sunset,_high_resolution__22.mp4" type="video/mp4"></video></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: left;vertical-align:middle;width: 400px">Sailboat sailing on a sunny day in a mountain lake, highly detailed.</td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"> <source src="samples/webm_no_audio/Sailboat_sailing_on_a_sunny_day_in_a_mountain_lake,_highly_detailed.webm" type="video/webm"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_im2wav/Sailboat_sailing_on_a_sunny_day_in_a_mountain_lake,_highly_detailed.mp4" type="video/mp4"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_GRAVO/Sailboat_sailing_on_a_sunny_day_in_a_mountain_lake,_highly_detailed.mp4" type="video/mp4"></video></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: left;vertical-align:middle;width: 400px">A knight riding on a horse through the countryside.</td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"> <source src="samples/webm_no_audio/A_knight_riding_on_a_horse_through_the_countryside_second_upsample__12.webm" type="video/webm"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_im2wav/A_knight_riding_on_a_horse_through_the_countryside_second_upsample__12.mp4" type="video/mp4"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_GRAVO/A_knight_riding_on_a_horse_through_the_countryside_second_upsample__12.mp4" type="video/mp4"></video></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: left;vertical-align:middle;width: 400px">A blue unicorn flying over a mystical land.</td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"> <source src="samples/webm_no_audio/A_blue_unicorn_flying_over_a_mystical_land_second_upsample__16.webm" type="video/webm"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_im2wav/A_blue_unicorn_flying_over_a_mystical_land_second_upsample__16.mp4" type="video/mp4"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_GRAVO/A_blue_unicorn_flying_over_a_mystical_land_second_upsample__16.mp4" type="video/mp4"></video></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: left;vertical-align:middle;width: 400px">A panda playing on a swing set.</td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"> <source src="samples/webm_no_audio/A_panda_playing_on_a_swing_set_second_upsample__1.webm" type="video/webm"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_im2wav/A_panda_playing_on_a_swing_set_second_upsample__1.mp4" type="video/mp4"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_GRAVO/A_panda_playing_on_a_swing_set_second_upsample__1.mp4" type="video/mp4"></video></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: left;vertical-align:middle;width: 400px">Robot dancing in times square.</td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"> <source src="samples/webm_no_audio/surreal2.webm" type="video/webm"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_im2wav/surreal2.mp4" type="video/mp4"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_GRAVO/surreal2.mp4" type="video/mp4"></video></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: left;vertical-align:middle;width: 400px">Cat watching TV with a remote in hand.</td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"> <source src="samples/webm_no_audio/surreal3.webm" type="video/webm"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_im2wav/surreal3.mp4" type="video/mp4"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_GRAVO/surreal3.mp4" type="video/mp4"></video></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: left;vertical-align:middle;width: 400px">A fluffy baby sloth with an orange knitted hat trying to figure out a laptop close up highly detailed studio lighting screen reflecting in its eye.</td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"> <source src="samples/webm_no_audio/surreal4.webm" type="video/webm"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_im2wav/surreal4.mp4" type="video/mp4"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_GRAVO/surreal4.mp4" type="video/mp4"></video></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: left;vertical-align:middle;width: 400px">A dog wearing a Superhero outfit with red cape flying through the sky.</td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"> <source src="samples/webm_no_audio/overview.webm" type="video/webm"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_im2wav/overview.mp4" type="video/mp4"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_GRAVO/overview.mp4" type="video/mp4"></video></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: left;vertical-align:middle;width: 400px">A small domesticated carnivorous mammal with soft fur, a short snout, and retractable claws.</td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"> <source src="samples/webm_no_audio/A_small_domesticated_carnivorous_mammal_with_soft_fur,_a_short_snout,_and_retractable_claws_second_upsample.webm" type="video/webm"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_im2wav/A_small_domesticated_carnivorous_mammal_with_soft_fur,_a_short_snout,_and_retractable_claws_second_upsample.mp4" type="video/mp4"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_GRAVO/A_small_domesticated_carnivorous_mammal_with_soft_fur,_a_short_snout,_and_retractable_claws_second_upsample.mp4" type="video/mp4"></video></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: left;vertical-align:middle;width: 400px">Humans building a highway on mars, highly detailed.</td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"> <source src="samples/webm_no_audio/Humans_building_a_highway_on_mars,_highly_detailed.webm" type="video/webm"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_im2wav/Humans_building_a_highway_on_mars,_highly_detailed.mp4" type="video/mp4"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_GRAVO/Humans_building_a_highway_on_mars,_highly_detailed.mp4" type="video/mp4"></video></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: left;vertical-align:middle;width: 400px">A musk ox grazing on beautiful wildflowers.</td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"> <source src="samples/webm_no_audio/A_musk_ox_grazing_on_beautiful_wildflowers.webm" type="video/webm"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_im2wav/A_musk_ox_grazing_on_beautiful_wildflowers.mp4" type="video/mp4"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_GRAVO/A_musk_ox_grazing_on_beautiful_wildflowers.mp4" type="video/mp4"></video></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: left;vertical-align:middle;width: 400px">A ballerina performs a beautiful and difficult dance on the roof of a very tall skyscraper; the city is lit up and glowing behind her.</td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"> <source src="samples/webm_no_audio/A_ballerina_performs_a_beautiful_and_difficult_dance_on_the_roof_of_a_very_tall_skyscraper.webm" type="video/webm"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_im2wav/A_ballerina_performs_a_beautiful_and_difficult_dance_on_the_roof_of_a_very_tall_skyscraper.mp4" type="video/mp4"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_GRAVO/A_ballerina_performs_a_beautiful_and_difficult_dance_on_the_roof_of_a_very_tall_skyscraper.mp4" type="video/mp4"></video></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: left;vertical-align:middle;width: 400px">i2vsingle1.</td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"> <source src="samples/webm_no_audio/i2vsingle1.webm" type="video/webm"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_im2wav/i2vsingle1.mp4" type="video/mp4"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_GRAVO/i2vsingle1.mp4" type="video/mp4"></video></td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;vertical-align:middle;width: 400px">i2vsingle2.</td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"> <source src="samples/webm_no_audio/i2vsingle2.webm" type="video/webm"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_im2wav/i2vsingle2.mp4" type="video/mp4"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_GRAVO/i2vsingle2.mp4" type="video/mp4"></video></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: left;vertical-align:middle;width: 400px">i2vsingle3.</td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"> <source src="samples/webm_no_audio/i2vsingle3.webm" type="video/webm"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_im2wav/i2vsingle3.mp4" type="video/mp4"></video></td>
+                    <td style="text-align: center"><video controls="controls" style="width: 160px;"  <source src="samples/mp4_GRAVO/i2vsingle3.mp4" type="video/mp4"></video></td>
+                </tr>
+            </tbody>
+			</table>
+		</div>
+</div>
+</article>
+</main>
+</div>
+
+</body>
+</html>
